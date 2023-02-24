@@ -92,7 +92,7 @@ const Footer = () => {
               height="67"
               rx="20.5"
               stroke="white"
-              stroke-linejoin="round"
+              strokeLinejoin="round"
             />
           </svg>
           <svg

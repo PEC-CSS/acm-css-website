@@ -8,7 +8,34 @@
 .navbar__nav-item {
   color: black;
   margin-right: 38px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% 100%,
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 10px
+  );
+}
+
+.navbar-nav > a:not(:last-child) > *:hover {
+  background-color: black;
+  color: white;
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
 }
