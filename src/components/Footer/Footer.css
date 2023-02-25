@@ -36,11 +36,12 @@
   max-width: 310px;
 }
 
-.footer__social > svg {
+.footer__social > a {
   margin: 10px;
 }
 
-.footer__main p {
+.footer__links p {
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
