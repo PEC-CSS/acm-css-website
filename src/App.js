@@ -3,11 +3,13 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import GithubChart from "./components/GithubChart/GithubChart";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <GithubChart />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
