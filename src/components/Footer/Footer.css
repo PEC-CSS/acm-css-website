@@ -36,11 +36,12 @@
   max-width: 310px;
 }
 
-.footer__social > svg {
+.footer__social > a {
   margin: 10px;
 }
 
-.footer__main p {
+.footer__links p {
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -50,14 +51,21 @@
   color: #ffffff;
 }
 
+.footer__contri {
+  background-color: #0075ff;
+  width: 100%;
+  /* position: absolute; */
+}
+
 @media only screen and (max-width: 600px) {
   .footer__main {
     padding-top: 50px;
     padding-bottom: 25%;
   }
 
-  .footer__main > svg {
-    position: absolute;
-    bottom: -150%;
+  .footer__contri {
+    position: relative;
+    transform: translateY(-100px);
+    margin-bottom: -100px;
   }
 }
