@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/acm-css-website/static/css/main.1d30667e.css",
-    "main.js": "/acm-css-website/static/js/main.5cf3249f.js",
+    "main.css": "/acm-css-website/static/css/main.327c8b5a.css",
+    "main.js": "/acm-css-website/static/js/main.99b429f1.js",
     "static/js/787.24016674.chunk.js": "/acm-css-website/static/js/787.24016674.chunk.js",
+    "static/media/card1_bg.jfif": "/acm-css-website/static/media/card1_bg.07bc80d8015bbeb1c311.jfif",
+    "static/media/card3_bg.jfif": "/acm-css-website/static/media/card3_bg.41f1fc8f9b9679b19518.jfif",
+    "static/media/card2_bg.jfif": "/acm-css-website/static/media/card2_bg.9f633d4f94ff6c0fb67e.jfif",
+    "static/media/acm_grps.png": "/acm-css-website/static/media/acm_grps.af323b84cb6a5f67f0bd.png",
+    "static/media/instagram_logo.png": "/acm-css-website/static/media/instagram_logo.04c7821417cfbab0b65d.png",
     "static/media/logo.svg": "/acm-css-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/acm-css-website/index.html",
-    "main.1d30667e.css.map": "/acm-css-website/static/css/main.1d30667e.css.map",
-    "main.5cf3249f.js.map": "/acm-css-website/static/js/main.5cf3249f.js.map",
+    "main.327c8b5a.css.map": "/acm-css-website/static/css/main.327c8b5a.css.map",
+    "main.99b429f1.js.map": "/acm-css-website/static/js/main.99b429f1.js.map",
     "787.24016674.chunk.js.map": "/acm-css-website/static/js/787.24016674.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d30667e.css",
-    "static/js/main.5cf3249f.js"
+    "static/css/main.327c8b5a.css",
+    "static/js/main.99b429f1.js"
   ]
 }
