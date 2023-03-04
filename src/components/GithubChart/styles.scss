@@ -1,0 +1,70 @@
+$cell-padding: 0.60em;
+$cell-padding-mobile: 0.35em;
+$cell-margin: 0.25em;
+$cell-margin-mobile: 0.15em;
+$cell-bg-color: #ebf4ff;
+
+.github-chart {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.github-chart__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 20%, rgba(0, 212, 255, 0) 100%);
+}
+
+.github-chart__chart {
+  display: flex;
+  justify-content: center;
+}
+
+.github-chart__cell {
+  margin: $cell-margin;
+  padding: $cell-padding;
+  background-color: $cell-bg-color;
+}
+
+.github-chart__cell-active {
+  margin: $cell-margin;
+  padding: $cell-padding;
+  background-color: $cell-bg-color;
+  animation: breathe 3s forwards ease;
+}
+
+@for $i from 1 through 7 {
+  .github-chart__cell-active:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.075}s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .github-chart__cell {
+    margin: $cell-margin-mobile;
+    padding: $cell-padding-mobile;
+  }
+
+  .github-chart__cell-active {
+    margin: $cell-margin-mobile;
+    padding: $cell-padding-mobile;
+  }
+}
+
+@keyframes breathe {
+  from {
+    background-color: #537FE7;
+  }
+
+  to {
+    background-color: $cell-bg-color;
+  }
+}

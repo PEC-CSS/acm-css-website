@@ -1,0 +1,45 @@
+nav{
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar__nav-item {
+  color: black;
+  margin-right: 38px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% 100%,
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 10px
+  );
+}
+
+.navbar-nav > a:not(:last-child) > *:hover {
+  background-color: black;
+  color: white;
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
