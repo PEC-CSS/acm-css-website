@@ -5,5 +5,11 @@
 .styled-calendar-container {
     margin-top: 10px;
     width: 90% !important;
-    height: 750px;
+    min-height: 45em;
+}
+
+@media only screen and (max-width: 600px) {
+    .styled-calendar-container {
+        min-height: 25em;
+    }
 }
