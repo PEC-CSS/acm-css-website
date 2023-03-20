@@ -1,0 +1,39 @@
+.about_section{
+    padding-top:3rem;
+    padding-bottom:4rem;
+    
+}
+#left{
+    text-align: left;
+}
+#right{
+    text-align: right;
+}
+.about_section_heading {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+
+}
+.about_section_content{
+    margin-top: 2rem; 
+    
+}
+.about_section_content.text_content{
+    color: #656565;
+    /* width: 55%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: 1.15rem;
+    max-width: 45%;
+}
+
+.about_section_content_img{
+    /* width:80%; */
+    /* margin: 4rem auto;
+    padding: 2rem 0; */
+    max-width: 45%;
+    border-radius: 50px;
+}
+img{
+    border-radius: 15px;
+}
