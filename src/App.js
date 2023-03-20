@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import GithubChart from "./components/GithubChart/GithubChart";
+import Calendar from "./components/Calendar/Calendar";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Navbar />
       <GithubChart />
+      <Calendar />
       <RouterProvider router={router}/>
       <Footer />
     </div>
