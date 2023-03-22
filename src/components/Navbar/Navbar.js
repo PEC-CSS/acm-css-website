@@ -51,13 +51,14 @@ const NavigationMenu = () => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home">pecacm</Navbar.Brand>
+        <Navbar.Brand href="/acm-css-website">pecacm</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
             {items.map((item, key) => (
               <Nav.Link
+                href={item.props.to}
                 key={key}
                 onMouseEnter={navLinkAnimation}
                 onMouseLeave={returnLinkAnimation}

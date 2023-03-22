@@ -1,14 +1,14 @@
 const items = [
-  <div to={"/about"} className="navbar__nav-item" data-original="About">
+  <div to={"/acm-css-website/about"} className="navbar__nav-item" data-original="About">
     About
   </div>,
-  <div to={"/branches"} className="navbar__nav-item" data-original="Branches">
+  <div to={"/acm-css-website/branches"} className="navbar__nav-item" data-original="Branches">
     Branches
   </div>,
-  <div to={"/team"} className="navbar__nav-item" data-original="Team">
+  <div to={"/acm-css-website/team"} className="navbar__nav-item" data-original="Team">
     Team
   </div>,
-  <div to={"/Events"} className="navbar__nav-item" data-original="Events">
+  <div to={"/acm-css-website/Events"} className="navbar__nav-item" data-original="Events">
     Events
   </div>,
   <div
