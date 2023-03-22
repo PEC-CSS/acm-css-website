@@ -10,18 +10,20 @@ import About from "./components/About/About";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  // Setting home page as default
-  { path: "*", element:<Home/>},
   { path: '/team', element: <Team/> },
-  { path: '/about', element: <About/> }
-]);
+  { path: '/about', element: <About/> },
+  // Setting home page as default
+  { path: "*", element:<Home/>}
+], {
+  basename: '/acm-css-website',
+});
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <GithubChart />
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} crea/>
       <Footer />
     </div>
   );
