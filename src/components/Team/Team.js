@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import Aseem from './images/Aseem.png'
+// import Aseem from './images/Aseem.png'
 import './Team.css'
 
 function Team() {
@@ -55,14 +55,14 @@ function Team() {
                 {/* <h2 className="team-title">Our Team</h2> */}
                 <div className="container">
                     <div className="row">
-                    <h2 className="team-title">Heads</h2>
+                    <h1 className="team-title">Heads</h1>
                         {
                             teamMembers.heads.map(person => {
                                 return (
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <div className="our-team">
                                             <div className="picture">
-                                                <img  className="img-fluid" src={Aseem} alt={person.name} />
+                                                <img  className="img-fluid" src='images/daksh.jpg' alt={person.name} />
                                             </div>
                                             <div className="team-content">
                                                 <h3 className="name">{person.name}</h3>
@@ -82,14 +82,14 @@ function Team() {
                         }
                     </div>
                     <div className="row">
-                    <h2 className="team-title">Core-Team</h2>
+                    <h1 className="team-title">Core-Team</h1>
                         {
                             teamMembers.coreTeam.map(person => {
                                 return (
                                     <div className="col-12 col-sm-6 col-lg-3">
                                         <div className="our-team">
                                             <div className="picture">
-                                                <img  className="img-fluid" src={Aseem} alt={person.name} />
+                                                <img  className="img-fluid" src={'images/daksh.jpg'} alt={person.name} />
                                             </div>
                                             <div className="team-content">
                                                 <h3 className="name">{person.name}</h3>
