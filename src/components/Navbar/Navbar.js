@@ -2,8 +2,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
-
-import items from "./items";
+import { initializeApp } from "firebase/app";
+import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
+import {useState} from 'react';
+import firebaseConfig from '../../config/firebase-config';
 
 const navLinkAnimation = (e) => {
   const currentChild = e.target.childNodes[0];
@@ -48,6 +50,68 @@ const returnLinkAnimation = (e) => {
 };
 
 const NavigationMenu = () => {
+
+  const app = initializeApp(firebaseConfig);
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth(app);
+  const [authorizedUser,setAuthorizedUser] = useState(false || sessionStorage.getItem("accessToken"));
+
+  const items = [
+    <div to={"/about"} className="navbar__nav-item" data-original="About">
+      About
+    </div>,
+    <div to={"/branches"} className="navbar__nav-item" data-original="Branches">
+      Branches
+    </div>,
+    <div to={"/team"} className="navbar__nav-item" data-original="Team">
+      Team
+    </div>,
+    <div to={"/Events"} className="navbar__nav-item" data-original="Events">
+      Events
+    </div>,
+    <div className="navbar__nav-item" data-original="Login">
+    {authorizedUser ? (
+      <button style={{ background: "none", border: "none", color: "#0075FF", fontWeight: "500" }} onClick={logoutUser}>
+        Logout
+      </button>) : (
+      <button style={{ background: "none", border: "none", color: "#0075FF", fontWeight: "500" }} onClick={signInwithGoogle}>
+        Login
+      </button>)}
+    </div>,
+  ];
+
+  function signInwithGoogle() {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // const credential = GoogleAuthProvider.credentialFromResult(result);
+        // const token = credential.accessToken;
+        const user = result.user;
+        if(user){
+          user.getIdToken().then((tkn)=>{
+            sessionStorage.setItem("accessToken", tkn);
+            setAuthorizedUser(true);
+          })
+        }
+      })
+      .catch((error) => {
+        // const errorCode = error.code;
+        const errorMessage = error.message;
+        // const email = error.customData.email;
+        // const credential = GoogleAuthProvider.credentialFromError(error);
+        console.log(errorMessage);
+      });
+  }
+  
+  function logoutUser(){
+    signOut(auth).then(() => {      
+      sessionStorage.clear();
+      setAuthorizedUser(false);
+      // window.location.replace("/");
+    }).catch((error) => {
+      alert(error);
+    });
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
