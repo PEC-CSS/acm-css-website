@@ -24,7 +24,7 @@
 }
 
 .card_1{
-    background-image: url('./img/card1_bg.jfif');
+    background-image: url('./img/background_image.jpeg');
     background-position: 85% 55%;
     filter: drop-shadow(2px 4px 8px rgba(10, 10, 10, 0.08));
     border-radius: 24px;
@@ -32,7 +32,7 @@
 }
 
 .card_2{
-    background-image: url('./img/card2_bg.jfif');
+    background-image: url('./img/background_image.jpeg');
     filter: drop-shadow(2px 4px 8px rgba(10, 10, 10, 0.08));
     border-radius: 24px;
     color: #fff;
@@ -41,7 +41,7 @@
 }
 
 .card_3{
-    background-image: url('./img/card3_bg.jfif');
+    background-image: url('./img/background_image.jpeg');
     filter: drop-shadow(2px 4px 8px rgba(10, 10, 10, 0.08));
     border-radius: 24px;
     color: #fff;
@@ -54,7 +54,7 @@
 }
 
 .card_text{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .card_content_div{
@@ -63,11 +63,11 @@
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(40.5px);
+    backdrop-filter: blur(5.5px);
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 65vh;
+    min-height: 110vh;
     border-radius: 24px;
 
     flex: none;
