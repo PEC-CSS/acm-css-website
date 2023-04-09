@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 // import Aseem from './images/Aseem.png'
-import './Team.css'
+// import './Team.css'
 
 function Team() {
 
