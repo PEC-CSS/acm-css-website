@@ -8,7 +8,7 @@ const items = [
   <div to={"/team"} className="navbar__nav-item" data-original="Team">
     Team
   </div>,
-  <div to={"/Events"} className="navbar__nav-item" data-original="Events">
+  <div to={"/events"} className="navbar__nav-item" data-original="Events">
     Events
   </div>,
   <div
