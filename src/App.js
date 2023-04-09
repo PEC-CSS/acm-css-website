@@ -4,12 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
-import Branches from "./components/Branches/Branches";
-import GithubChart from "./components/GithubChart/GithubChart";
+import Events from "./pages/Events";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  { path: "/branches", element: <Branches />},
+  { path: "/events", element: <Events /> },
   // Setting home page as default
   { path: "*", element:<Home/>},
 ]);
